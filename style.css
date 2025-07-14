@@ -907,8 +907,14 @@ input[type="checkbox"] {
   .form-sec-card-last-text{
     font-size: 0.8rem;
   }
+  .form-name-number-input-container{
+    flex-direction: column;
+  }
+  #name,#card-number{
+    padding: 18px 10px;
+  }
   input,textarea::placeholder {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 form{
   padding: 12px;
