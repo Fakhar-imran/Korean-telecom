@@ -428,7 +428,10 @@ header {
   font-weight: 300;
 }
 .sec-3-last-img {
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 10px;
 }
 /* section-3 responsivness  */
 
@@ -673,25 +676,25 @@ td {
   color: #3617ce;
   font-size: 1rem;
 }
-.blue-border{
+.blue-border {
   border-right: 3px solid blue;
 }
-.border-bottom{
+.border-bottom {
   border-bottom: 3px solid blue;
 }
-.border-top{
+.border-top {
   border-top: 3px solid blue;
 }
 
 /* table section responsivness  */
 @media screen and (max-width: 768px) {
-  .table-text-container span{
+  .table-text-container span {
     font-size: 1.3rem;
   }
-  .table-text-container h1{
+  .table-text-container h1 {
     font-size: 1.3rem;
   }
-  .table-text-container{
+  .table-text-container {
     flex-direction: column;
     align-items: start;
     row-gap: 1rem;
@@ -700,7 +703,251 @@ td {
     justify-content: start;
     overflow-x: auto;
   }
-  table{
+  table {
     min-width: 550px;
   }
+}
+/* form section styling  */
+.form-section {
+  position: relative;
+  background-color: #3617ce;
+}
+.form-sec-parent-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-bottom: 50px;
+}
+.world-map-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.form-sec-text-container {
+  color: white;
+  font-family: "inter";
+  padding-bottom: 75px;
+}
+.form-text-first-line {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+.form-text-h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+.yellow-text {
+  color: yellow;
+}
+.ph-no-container {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 5px 10px 5px 5px;
+  border-radius: 300px;
+  background-color: #ff6495;
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+.ph-no-container img {
+  width: 2.2rem;
+}
+.ph-no-container p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.form-text-last-line {
+  font-size: 0.7rem;
+}
+.form-part-container {
+  display: flex;
+    gap: 1.2rem;
+}
+.form-part-left-side {
+  color: white;
+  font-family: "inter";
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  flex: 1 1 0;
+}
+.form-part-left-side h1 {
+  font-size: 1.5rem;
+  padding-bottom: 35px;
+}
+.form-cards-parent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form-sec-cards-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 1.5rem;
+}
+.form-sec-cards {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #2f13bf;
+  border-radius: 10px;
+  gap: 0.8rem;
+  flex: 1 1 0;
+}
+.form-sec-cards img {
+  width: 2.8rem;
+}
+.step {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.form-part-right-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+}
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+
+}
+.form-name-number-input-container {
+  display: flex;
+  gap: 0.8rem;
+}
+.form-heading{
+  font-size: 1.5rem;
+    padding-bottom: 35px;
+}
+form p {
+  color: black;
+  font-weight: 900;
+  font-family: "inter";
+}
+.form-name-input p{
+  padding-bottom: 10px;
+}
+.form-card-num-input p{
+  padding-bottom: 10px;
+}
+.form-card-num-input{
+  width: 100%;
+}
+.form-name-input{
+  width: 100%;
+}
+#name,#card-number,textarea{
+  padding: 10px;
+  border: 1px solid #afb2b4;
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+}
+.textarea-p{
+  color: black;
+  font-weight: 900;
+  font-family: "inter";
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.checkbox-container{
+  padding-top: 10px;
+}
+.checkbox-container span{
+  color: black;
+  padding-left: 0.5rem;
+}
+.form-btn-container{
+  display: flex;
+  justify-content: end;
+    padding-top: 10px;
+}
+.form-btn-container button{
+  background-color: #2f13bf;
+  padding: 10px;
+  border: 1px solid #2f13bf;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  accent-color: #2f13bf;
+}
+.checkbox-container span{
+  font-size: 0.8rem;
+}
+/* form section responsivness  */
+@media screen and (max-width: 768px) {
+  .form-part-container{
+    flex-direction: column;
+  }
+  .form-part-left-side{
+    width: 100%;
+  }
+  .form-part-right-side{
+    width: 100%;
+  }
+  .form-text-h1{
+    font-size: 2.2rem;
+  }
+  .step{
+    font-size: 1.2rem;
+  }
+  .form-sec-card-last-text{
+    font-size: 0.8rem;
+  }
+  input,textarea::placeholder {
+  font-size: 0.5rem;
+}
+}
+/* end of form section  */
+/* footer  */
+.footer-parent-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.8rem;
+  padding-top: 30px;
+}
+.footer-first-imgs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 2rem;
+}
+.footer-imgs img{
+  width: 100%
+}
+.footer-last-img{
+  display: flex;
+  justify-content: center;
+}
+.footer-last-img img{
+  padding-top: 1rem;
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-first-imgs{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .footer-last-img img{
+  padding-top: 1rem;
+  width: 80%;
+}
 }
