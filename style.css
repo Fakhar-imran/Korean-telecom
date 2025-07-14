@@ -923,7 +923,7 @@ input[type="checkbox"] {
 }
 .footer-first-imgs{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
   gap: 2rem;
