@@ -892,6 +892,9 @@ input[type="checkbox"] {
   .form-part-left-side{
     width: 100%;
   }
+  .form-part-left-side h1{
+    padding-bottom: 20px;
+  }
   .form-part-right-side{
     width: 100%;
   }
